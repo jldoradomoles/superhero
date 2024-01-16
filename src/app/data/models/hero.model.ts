@@ -1,11 +1,12 @@
-export interface hero {
+export interface Hero {
   id: string;
   name: string;
+  slug: string;
+  description: string;
+  descriptionlong: string;
   powerstats: Powerstats;
   biography: Biography;
   appearance: Appearance;
-  work: Work;
-  connections: Connections;
   image: Image;
 }
 
@@ -35,16 +36,6 @@ export interface Appearance {
   weight: string[];
   eyecolor: string;
   haircolor: string;
-}
-
-export interface Work {
-  occupation: string;
-  base: string;
-}
-
-export interface Connections {
-  groupaffiliation: string;
-  relatives: string;
 }
 
 export interface Image {
