@@ -1,7 +1,15 @@
 @if (hero) {
-<div (click)="heroDetails()" class="col click">
+<div class="col">
   <div class="card shadow-sm">
-    <img class="" src="{{ url }}" alt="hero" />
+    @if (hero.image) {
+    <img
+      (click)="heroDetails()"
+      class="click"
+      src="{{ hero.image.url }}"
+      alt="hero"
+    />
+    }
+
     <div class="card-body">
       <h3>{{ hero.name }}</h3>
       <p class="card-text">
@@ -9,17 +17,13 @@
       </p>
       <div class="d-flex gap-2 py-1">
         <button
+          (click)="editarHero()"
           class="btn btn-primary d-inline-flex align-items-center"
           type="button"
         >
           Editar
         </button>
-        <button
-          class="btn btn-danger d-inline-flex align-items-center"
-          type="button"
-        >
-          Eliminar
-        </button>
+        <app-ngmodal (deleted)="deleted($event)"></app-ngmodal>
       </div>
     </div>
   </div>

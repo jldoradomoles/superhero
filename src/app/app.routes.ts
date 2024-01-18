@@ -4,22 +4,24 @@ import { HomeComponent } from './pages/home/home.component';
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   {
-    path: 'hero/:id',
+    path: 'heros/:id',
     loadComponent: () =>
       import('./pages/hero/hero.component').then((c) => c.HeroComponent),
     data: { breadCrumb: 'post' },
   },
   {
-    path: 'hero/:slug',
+    path: 'hero/form',
     loadComponent: () =>
-      import('./pages/hero/hero.component').then((c) => c.HeroComponent),
+      import('./pages/heroform/heroform.component').then(
+        (c) => c.HeroformComponent
+      ),
     data: { breadCrumb: 'post' },
   },
   {
-    path: 'newhero',
+    path: 'hero/form/:id',
     loadComponent: () =>
-      import('./pages/newhero/newhero.component').then(
-        (c) => c.NewheroComponent
+      import('./pages/heroform/heroform.component').then(
+        (c) => c.HeroformComponent
       ),
     data: { breadCrumb: 'post' },
   },

@@ -1,50 +1,85 @@
-import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+import {
+  Component,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  SimpleChanges,
+  inject,
+} from '@angular/core';
 import { HeroCardComponent } from '../../components/hero-card/hero-card.component';
 import { HeroListComponent } from '../../components/hero-list/hero-list.component';
-import { Subject, takeUntil } from 'rxjs';
+import { Subject, take, takeUntil } from 'rxjs';
 import { HeroService } from '../../data/services/heros/hero.service';
 import { Hero } from '../../data/models/hero.model';
+import { LoaderComponent } from '../../components/loader/loader.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
-  imports: [HeroCardComponent, HeroListComponent],
+  imports: [HeroCardComponent, HeroListComponent, LoaderComponent],
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit, OnDestroy, OnChanges {
   heroService = inject(HeroService);
+  router = inject(Router);
   private unsubscribe: Subject<void> = new Subject<void>();
+  heroName: any;
 
   constructor() {}
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.heroName);
+  }
 
   heros: Hero[] = [];
+  herosDisplayed: Hero[] = [];
 
   ngOnInit(): void {
+    this.heroService.state$.subscribe((data) =>
+      data ? this.getHeros() : null
+    );
     this.getHeros();
   }
 
-  getHeros() {
-    // this.spinner.show();
-    console.log(
-      '<----------LLAMANDO TODOS LOS POSTS  SPINER---------------------->'
-    );
+  newHero() {
+    this.router.navigate(['hero/form']);
+  }
 
+  heroNameEvent(event: any) {
+    this.heroName = event.target.value;
+  }
+
+  findHero() {
+    this.filterHeros();
+  }
+
+  limpiar() {
+    console.log(this.heroName);
+    this.heroName = '';
+    this.herosDisplayed = this.heros;
+    console.log(this.heroName);
+  }
+
+  getHeros() {
     this.heroService
       .getHeros()
       .pipe(takeUntil(this.unsubscribe))
       .subscribe(
         (data) => {
           this.heros = data;
-          console.log('Heros-------->', this.heros);
-          // this.spinner.hide();
+          this.herosDisplayed = data;
         },
         (error) => {
-          // if any error, Code throws the error
-          console.log('Error Blog---->', error.error.message);
-          // this.spinner.hide();
+          console.log('Error hero---->', error.error.message);
         }
       );
+  }
+
+  filterHeros() {
+    this.herosDisplayed = this.heros.filter((hero) =>
+      hero.name.includes(this.heroName)
+    );
   }
 
   ngOnDestroy(): void {

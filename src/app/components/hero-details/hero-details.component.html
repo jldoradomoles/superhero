@@ -1,1 +1,38 @@
-<p>{{ hero.name }}</p>
+@if (hero) { @defer (on timer(2s)) {
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img
+        src="{{ hero.image.url }}"
+        class="d-block mx-lg-auto img-fluid"
+        alt="Bootstrap Themes"
+        width="700"
+        height="500"
+        loading="lazy"
+      />
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+        {{ hero.name }}
+      </h1>
+      <p class="lead">
+        {{ hero.descriptionlong }}
+      </p>
+      <ul>
+        <li>Combate: {{ hero.combat }}</li>
+        <li>Durabilidad: {{ hero.durability }}</li>
+        <li>Inteliguencia: {{ hero.intelligence }}</li>
+        <li>Poder: {{ hero.power }}</li>
+        <li>Velcidad: {{ hero.speed }}</li>
+        <li>Fortaleza: {{ hero.strength }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+} @placeholder {
+<div class="loading-container flex-content-center">
+  <mat-progress-spinner color="primary" mode="indeterminate">
+  </mat-progress-spinner>
+</div>
+} }

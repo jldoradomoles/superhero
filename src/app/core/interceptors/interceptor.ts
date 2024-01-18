@@ -4,27 +4,35 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
+  HttpResponse,
 } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { catchError, finalize, map } from 'rxjs/operators';
+import { LoadingService } from '../../data/services/loading/loading.service';
+import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Injectable()
 export class Interceptor implements HttpInterceptor {
-  constructor() {}
+  private _activeRequest: number = 0;
+  constructor(private _ngxUiLoaderService: NgxUiLoaderService) {}
 
   intercept(
-    request: HttpRequest<any>,
+    request: HttpRequest<unknown>,
     next: HttpHandler
-  ): Observable<HttpEvent<any>> {
-    return next.handle(request).pipe(
-      catchError((error) => {
-        if (error.status === 401) {
-          // this.keycloak.logout();
-        }
-        console.error('Error HTTP:', error);
+  ): Observable<HttpEvent<unknown>> {
+    console.log('**INGRESANDO AL INTERCEPTOR**');
+    if (this._activeRequest === 0) {
+      this._ngxUiLoaderService.start();
+    }
+    this._activeRequest++; //1
 
-        return throwError(() => error);
-      })
-    );
+    return next.handle(request).pipe(finalize(() => this._stopLoader()));
+  }
+
+  private _stopLoader() {
+    this._activeRequest--;
+    if (this._activeRequest === 0) {
+      this._ngxUiLoaderService.stop();
+    }
   }
 }

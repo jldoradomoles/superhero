@@ -2,15 +2,41 @@
   "heros": [
     {
       "id": "69",
-      "name": "BATMAN 1",
+      "name": "Batman",
+      "slug": "batman",
       "description": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world.",
       "descriptionlong": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world. Seeking retribution and a demonstration of power, Xauron had thousands of guards, as well as their spouses, herded into an arena, with their children forced to watch as their parents were massacred over the course of days. When the 15,000 children of those families were forced to watch the massacre of their parents, many committed suicide or went insane. One swore never to let such a tragedy occur again, and vowed to become The Batman.Already aware of the Batman Legacy and the many Batmen that had already existed, he chose the symbol of the bat because he thought that it stood for more than simply fear; it stood as an ideal, it stood for justice. Knowing what was necessary to succeed in his mission, he began training, honing his abilities just as hundreds of others who had taken the mantle of the bat had done before him. He furthered his knowledge in millions of physical and mental techniques, various subjects, and even more in searching for the technology he would need to combat evil.After years of patience, training, studying, and preparing, Batman One Million took to the dangerous Asylum Planet, Pluto, along with his sidekick, Robin One Million. Soon after, he was invited to join a new incarnation of the Justice League, Justice Legion Alpha, where he met Superman One Million, Flash One Million, among others. After years of working together, they went back in time to invite the Justice League of the 20th century to see the rebirth of the first Superman, Superman Prime. Unexpectedly, their companion Starman betrayed them and unleashed a plague onto Earth, with the real Justice League being unable to stop it, Justice Legion Alpha was there to help them. Batman One Million worked with the 20th century Batman to find a way to stop Starman's plan, along with Dick Grayson and Tim Drake, using the technology of the Batcave. Batman One Million stopped his plans, ending with Starman returning to the light once more and committing suicide to stop what he had done. Batman One Million and his companions returned to their era, along with the 20th century Justice League, to watch the rebirth of Superman Prime.",
-      "intelligence": 47,
-      "strength": 47,
-      "speed": 4747,
-      "durability": 74,
-      "power": 47,
-      "combat": 47,
+      "powerstats": {
+        "intelligence": "81",
+        "strength": "40",
+        "speed": "29",
+        "durability": "55",
+        "power": "63",
+        "combat": "90"
+      },
+      "biography": {
+        "full-name": "Terry McGinnis",
+        "alter-egos": "No alter egos found.",
+        "aliases": [
+          "Batman II",
+          "The Tomorrow Knight",
+          "The second Dark Knight",
+          "The Dark Knight of Tomorrow",
+          "Batman Beyond"
+        ],
+        "place-of-birth": "Gotham City, 25th Century",
+        "first-appearance": "Batman Beyond #1",
+        "publisher": "DC Comics",
+        "alignment": "good"
+      },
+      "appearance": {
+        "gender": "Male",
+        "race": "Human",
+        "height": ["5'10", "178 cm"],
+        "weight": ["170 lb", "77 kg"],
+        "eye-color": "Blue",
+        "hair-color": "Black"
+      },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
       }
@@ -18,44 +44,101 @@
     {
       "id": "70",
       "name": "Batman 3",
+      "slug": "Batman-3",
       "description": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto.",
       "descriptionlong": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world. Seeking retribution and a demonstration of power, Xauron had thousands of guards, as well as their spouses, herded into an arena, with their children forced to watch as their parents were massacred over the course of days. When the 15,000 children of those families were forced to watch the massacre of their parents, many committed suicide or went insane. One swore never to let such a tragedy occur again, and vowed to become The Batman.Already aware of the Batman Legacy and the many Batmen that had already existed, he chose the symbol of the bat because he thought that it stood for more than simply fear; it stood as an ideal, it stood for justice. Knowing what was necessary to succeed in his mission, he began training, honing his abilities just as hundreds of others who had taken the mantle of the bat had done before him. He furthered his knowledge in millions of physical and mental techniques, various subjects, and even more in searching for the technology he would need to combat evil.After years of patience, training, studying, and preparing, Batman One Million took to the dangerous Asylum Planet, Pluto, along with his sidekick, Robin One Million. Soon after, he was invited to join a new incarnation of the Justice League, Justice Legion Alpha, where he met Superman One Million, Flash One Million, among others. After years of working together, they went back in time to invite the Justice League of the 20th century to see the rebirth of the first Superman, Superman Prime. Unexpectedly, their companion Starman betrayed them and unleashed a plague onto Earth, with the real Justice League being unable to stop it, Justice Legion Alpha was there to help them. Batman One Million worked with the 20th century Batman to find a way to stop Starman's plan, along with Dick Grayson and Tim Drake, using the technology of the Batcave. Batman One Million stopped his plans, ending with Starman returning to the light once more and committing suicide to stop what he had done. Batman One Million and his companions returned to their era, along with the 20th century Justice League, to watch the rebirth of Superman Prime.",
-      "intelligence": "100",
-      "strength": "26",
-      "speed": "27",
-      "durability": "50",
-      "power": "47",
-      "combat": "100",
+      "powerstats": {
+        "intelligence": "100",
+        "strength": "26",
+        "speed": "27",
+        "durability": "50",
+        "power": "47",
+        "combat": "100"
+      },
+      "biography": {
+        "full-name": "Bruce Wayne",
+        "alter-egos": "No alter egos found.",
+        "aliases": ["Insider", "Matches Malone"],
+        "place-of-birth": "Crest Hill, Bristol Township; Gotham County",
+        "first-appearance": "Detective Comics #27",
+        "publisher": "DC Comics",
+        "alignment": "good"
+      },
+      "appearance": {
+        "gender": "Male",
+        "race": "Human",
+        "height": ["6'2", "188 cm"],
+        "weight": ["210 lb", "95 kg"],
+        "eye-color": "blue",
+        "hair-color": "black"
+      },
+      "work": {
+        "occupation": "Businessman",
+        "base": "Batcave, Stately Wayne Manor, Gotham City; Hall of Justice, Justice League Watchtower"
+      },
+      "connections": {
+        "group-affiliation": "Batman Family, Batman Incorporated, Justice League, Outsiders, Wayne Enterprises, Club of Heroes, formerly White Lantern Corps, Sinestro Corps",
+        "relatives": "Damian Wayne (son), Dick Grayson (adopted son), Tim Drake (adopted son), Jason Todd (adopted son), Cassandra Cain (adopted ward)\nMartha Wayne (mother, deceased), Thomas Wayne (father, deceased), Alfred Pennyworth (former guardian), Roderick Kane (grandfather, deceased), Elizabeth Kane (grandmother, deceased), Nathan Kane (uncle, deceased), Simon Hurt (ancestor), Wayne Family"
+      },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
       }
     },
     {
-      "id": "71",
-      "name": "Batman II",
-      "description": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto.",
-      "descriptionlong": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world. Seeking retribution and a demonstration of power, Xauron had thousands of guards, as well as their spouses, herded into an arena, with their children forced to watch as their parents were massacred over the course of days. When the 15,000 children of those families were forced to watch the massacre of their parents, many committed suicide or went insane. One swore never to let such a tragedy occur again, and vowed to become The Batman.Already aware of the Batman Legacy and the many Batmen that had already existed, he chose the symbol of the bat because he thought that it stood for more than simply fear; it stood as an ideal, it stood for justice. Knowing what was necessary to succeed in his mission, he began training, honing his abilities just as hundreds of others who had taken the mantle of the bat had done before him. He furthered his knowledge in millions of physical and mental techniques, various subjects, and even more in searching for the technology he would need to combat evil.After years of patience, training, studying, and preparing, Batman One Million took to the dangerous Asylum Planet, Pluto, along with his sidekick, Robin One Million. Soon after, he was invited to join a new incarnation of the Justice League, Justice Legion Alpha, where he met Superman One Million, Flash One Million, among others. After years of working together, they went back in time to invite the Justice League of the 20th century to see the rebirth of the first Superman, Superman Prime. Unexpectedly, their companion Starman betrayed them and unleashed a plague onto Earth, with the real Justice League being unable to stop it, Justice Legion Alpha was there to help them. Batman One Million worked with the 20th century Batman to find a way to stop Starman's plan, along with Dick Grayson and Tim Drake, using the technology of the Batcave. Batman One Million stopped his plans, ending with Starman returning to the light once more and committing suicide to stop what he had done. Batman One Million and his companions returned to their era, along with the 20th century Justice League, to watch the rebirth of Superman Prime.",
-      "intelligence": "88",
-      "strength": "11",
-      "speed": "33",
-      "durability": "28",
-      "power": "36",
-      "combat": "100",
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"
-      }
-    },
-    {
       "id": "620",
       "name": "Spider-Man",
+      "slug": "Spider-Man",
       "description": "One evening, Parker attended a public exhibition demonstrating the safe handling of nuclear laboratory waste materials sponsored by the General Techtronics Corporation.",
       "descriptionlong": "One evening, Parker attended a public exhibition demonstrating the safe handling of nuclear laboratory waste materials sponsored by the General Techtronics Corporation. During the demonstration, a small common house spider happened to be in the path of a particle accelerator's beam and was massively irradiated. The stricken spider fell on to Parker's hand, broke his skin with its fangs, and died.With his hand burning from the bite, Parker left the exhibition. Parker made his way home and passed through an unfamiliar section of the city, where he was accosted by a gang of hoodlums. Tossing the gang members aside, Parker was shocked by his own display of strength. As he fled from them, he ran into the path of a speeding car, and leaped to safety about thirty feet up onto a nearby wall. To his growing surprise, he discovered that he was able to stick to the wall with his fingertips. As he easily walked down a guy wire to the street below, he realized that he now possessed a superb sense of balance. Parker quickly associated these spider-like abilities with the bite from the irradiated spider.Parker went home, where his Aunt May sent him on an errand to deliver clothing to a charity drive located in a nearby National Guard Armory. There, he saw a wrestling match which offered a prize for anyone who could remain in the ring for at least three minutes with a professional wrestler. Interested in testing his new-found powers, Parker decided to accept the wrestler's challenge. Wearing a mask to conceal his features to avoid embarassment in case he lost, he easily defeated his opponent.A television producer's talent agent spotted Parker at the wrestling match, and promised him a segment on a network variety show. Parker, calling himself the Amazing Spider-Man, accepted the offer and decided to use it as a springboard to a show business career as a spectacular stunt performer. Over the next several evenings, Parker used equipment borrowed from his high school to fabricate a fluid that imitated a spider's silk web, and design spinneret devices to project that fluid from his wrists in the form of a web strand. He also silkscreened his original design for a costume onto a body stocking and full-head mask. Thus prepared, Peter Parker appeared as Spider-Man on national television and was an immediate media sensation.When the television show ended, a burglar, being pursued by a security guard, ran by Parker who impetuously allowed him to pass, although he could have easily stopped him. When reprimanded by the guard, Parker arrogantly replied that he was a professional performer, and that chasing criminals was the guard's job. Parker promptly forgot the incident.A few days later, Parker returned home to find that his Uncle Ben had been murdered by a burglar. A police officer informed him that the burglar had been trailed to a nearby abandoned warehouse where the police had him trapped. Grief-stricken, Parker rushed to the warehouse to seek vengeance. At the warehouse, Parker, as Spider-Man, easily captured the burglar and realized that he was the same person that he had allowed to run past him earlier that day in the TV studio. He realized that if he had acted responsibly earlier, he might have prevented the death of his uncle. Filled with remorse, he realized that with power comes responsibility, and he vowed to never shirk that responsibility again.Peter began to use his powers to fight crime. He also tried to join the hero team the Fantastic Four in their formative stages, but was dismissed. As a solo hero, Parker took pictures of his fights as Spider-Man using an automatic camera, and then sold the pictures to The Daily Bugle. Spider-Man rapidly became one of the most well-known citizens in New York City, although Bugle editor J. Jonah Jameson soon branded him a menace.",
-      "intelligence": "90",
-      "strength": "55",
-      "speed": "67",
-      "durability": "75",
-      "power": "74",
-      "combat": "85",
+      "powerstats": {
+        "intelligence": "90",
+        "strength": "55",
+        "speed": "67",
+        "durability": "75",
+        "power": "74",
+        "combat": "85"
+      },
+      "biography": {
+        "full-name": "Peter Parker",
+        "alter-egos": "No alter egos found.",
+        "aliases": [
+          "Spiderman",
+          "Bag-Man",
+          "Black Marvel",
+          "Captain Universe",
+          "Dusk",
+          "Green Hood",
+          "Hornet",
+          "Mad Dog 336",
+          "Peter Palmer",
+          "Prodigy",
+          "Ricochet",
+          "Scarlet Spider",
+          "Spider-Boy",
+          "Spider-Hulk",
+          "Spider-Morphosis"
+        ],
+        "place-of-birth": "New York, New York",
+        "first-appearance": "Amazing Fantasy #15",
+        "publisher": "Marvel Comics",
+        "alignment": "good"
+      },
+      "appearance": {
+        "gender": "Male",
+        "race": "Human",
+        "height": ["5'10", "178 cm"],
+        "weight": ["165 lb", "74 kg"],
+        "eye-color": "Hazel",
+        "hair-color": "Brown"
+      },
+      "work": {
+        "occupation": "Freelance photographer, teacher",
+        "base": "New York, New York"
+      },
+      "connections": {
+        "group-affiliation": "Member of the Avengers, formerly member of Outlaws, alternate Fantastic Four",
+        "relatives": "Richard Parker (father, deceased), Mary Parker(mother, deceased), Benjamin Parker (uncle, deceased), May Parker (aunt), Mary Jane Watson-Parker (wife), May Parker (daughter, allegedly deceased)"
+      },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/133.jpg"
       }
@@ -63,14 +146,42 @@
     {
       "id": "621",
       "name": "Spider-Man 2",
+      "slug": "Spider-Man-2",
       "description": "One evening, Parker attended a public exhibition demonstrating the safe handling of nuclear laboratory waste materials sponsored by the General Techtronics Corporation. During the demonstration, a small common house spider happened to be in the path of a particle accelerator's beam and was massively irradiated.",
       "descriptionlong": "One evening, Parker attended a public exhibition demonstrating the safe handling of nuclear laboratory waste materials sponsored by the General Techtronics Corporation. During the demonstration, a small common house spider happened to be in the path of a particle accelerator's beam and was massively irradiated. The stricken spider fell on to Parker's hand, broke his skin with its fangs, and died.With his hand burning from the bite, Parker left the exhibition. Parker made his way home and passed through an unfamiliar section of the city, where he was accosted by a gang of hoodlums. Tossing the gang members aside, Parker was shocked by his own display of strength. As he fled from them, he ran into the path of a speeding car, and leaped to safety about thirty feet up onto a nearby wall. To his growing surprise, he discovered that he was able to stick to the wall with his fingertips. As he easily walked down a guy wire to the street below, he realized that he now possessed a superb sense of balance. Parker quickly associated these spider-like abilities with the bite from the irradiated spider.Parker went home, where his Aunt May sent him on an errand to deliver clothing to a charity drive located in a nearby National Guard Armory. There, he saw a wrestling match which offered a prize for anyone who could remain in the ring for at least three minutes with a professional wrestler. Interested in testing his new-found powers, Parker decided to accept the wrestler's challenge. Wearing a mask to conceal his features to avoid embarassment in case he lost, he easily defeated his opponent.A television producer's talent agent spotted Parker at the wrestling match, and promised him a segment on a network variety show. Parker, calling himself the Amazing Spider-Man, accepted the offer and decided to use it as a springboard to a show business career as a spectacular stunt performer. Over the next several evenings, Parker used equipment borrowed from his high school to fabricate a fluid that imitated a spider's silk web, and design spinneret devices to project that fluid from his wrists in the form of a web strand. He also silkscreened his original design for a costume onto a body stocking and full-head mask. Thus prepared, Peter Parker appeared as Spider-Man on national television and was an immediate media sensation.When the television show ended, a burglar, being pursued by a security guard, ran by Parker who impetuously allowed him to pass, although he could have easily stopped him. When reprimanded by the guard, Parker arrogantly replied that he was a professional performer, and that chasing criminals was the guard's job. Parker promptly forgot the incident.A few days later, Parker returned home to find that his Uncle Ben had been murdered by a burglar. A police officer informed him that the burglar had been trailed to a nearby abandoned warehouse where the police had him trapped. Grief-stricken, Parker rushed to the warehouse to seek vengeance. At the warehouse, Parker, as Spider-Man, easily captured the burglar and realized that he was the same person that he had allowed to run past him earlier that day in the TV studio. He realized that if he had acted responsibly earlier, he might have prevented the death of his uncle. Filled with remorse, he realized that with power comes responsibility, and he vowed to never shirk that responsibility again.Peter began to use his powers to fight crime. He also tried to join the hero team the Fantastic Four in their formative stages, but was dismissed. As a solo hero, Parker took pictures of his fights as Spider-Man using an automatic camera, and then sold the pictures to The Daily Bugle. Spider-Man rapidly became one of the most well-known citizens in New York City, although Bugle editor J. Jonah Jameson soon branded him a menace.",
-      "intelligence": "null",
-      "strength": "57",
-      "speed": "null",
-      "durability": "null",
-      "power": "null",
-      "combat": "null",
+      "powerstats": {
+        "intelligence": "null",
+        "strength": "57",
+        "speed": "null",
+        "durability": "null",
+        "power": "null",
+        "combat": "null"
+      },
+      "biography": {
+        "full-name": "Miguel O'Hara",
+        "alter-egos": "No alter egos found.",
+        "aliases": ["Spider-Man 2099", "Spiderman"],
+        "place-of-birth": "-",
+        "first-appearance": "Amazing Spider-Man #365 (August, 1992)",
+        "publisher": "Marvel Comics",
+        "alignment": "good"
+      },
+      "appearance": {
+        "gender": "-",
+        "race": "Human",
+        "height": ["5'10", "178 cm"],
+        "weight": ["170 lb", "77 kg"],
+        "eye-color": "Red",
+        "hair-color": "Brown"
+      },
+      "work": {
+        "occupation": "CEO of Alchemax Corporation, Executive Assistant",
+        "base": "-"
+      },
+      "connections": {
+        "group-affiliation": "-",
+        "relatives": "-"
+      },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/10647.jpg"
       }
@@ -78,14 +189,42 @@
     {
       "id": "622",
       "name": "Spider-Man 3",
+      "slug": "Spider-Man-3",
       "description": "One evening, Parker attended a public exhibition demonstrating the safe handling of nuclear laboratory waste materials sponsored by the General Techtronics Corporation.",
       "descriptionlong": "One evening, Parker attended a public exhibition demonstrating the safe handling of nuclear laboratory waste materials sponsored by the General Techtronics Corporation. During the demonstration, a small common house spider happened to be in the path of a particle accelerator's beam and was massively irradiated. The stricken spider fell on to Parker's hand, broke his skin with its fangs, and died.With his hand burning from the bite, Parker left the exhibition. Parker made his way home and passed through an unfamiliar section of the city, where he was accosted by a gang of hoodlums. Tossing the gang members aside, Parker was shocked by his own display of strength. As he fled from them, he ran into the path of a speeding car, and leaped to safety about thirty feet up onto a nearby wall. To his growing surprise, he discovered that he was able to stick to the wall with his fingertips. As he easily walked down a guy wire to the street below, he realized that he now possessed a superb sense of balance. Parker quickly associated these spider-like abilities with the bite from the irradiated spider.Parker went home, where his Aunt May sent him on an errand to deliver clothing to a charity drive located in a nearby National Guard Armory. There, he saw a wrestling match which offered a prize for anyone who could remain in the ring for at least three minutes with a professional wrestler. Interested in testing his new-found powers, Parker decided to accept the wrestler's challenge. Wearing a mask to conceal his features to avoid embarassment in case he lost, he easily defeated his opponent.A television producer's talent agent spotted Parker at the wrestling match, and promised him a segment on a network variety show. Parker, calling himself the Amazing Spider-Man, accepted the offer and decided to use it as a springboard to a show business career as a spectacular stunt performer. Over the next several evenings, Parker used equipment borrowed from his high school to fabricate a fluid that imitated a spider's silk web, and design spinneret devices to project that fluid from his wrists in the form of a web strand. He also silkscreened his original design for a costume onto a body stocking and full-head mask. Thus prepared, Peter Parker appeared as Spider-Man on national television and was an immediate media sensation.When the television show ended, a burglar, being pursued by a security guard, ran by Parker who impetuously allowed him to pass, although he could have easily stopped him. When reprimanded by the guard, Parker arrogantly replied that he was a professional performer, and that chasing criminals was the guard's job. Parker promptly forgot the incident.A few days later, Parker returned home to find that his Uncle Ben had been murdered by a burglar. A police officer informed him that the burglar had been trailed to a nearby abandoned warehouse where the police had him trapped. Grief-stricken, Parker rushed to the warehouse to seek vengeance. At the warehouse, Parker, as Spider-Man, easily captured the burglar and realized that he was the same person that he had allowed to run past him earlier that day in the TV studio. He realized that if he had acted responsibly earlier, he might have prevented the death of his uncle. Filled with remorse, he realized that with power comes responsibility, and he vowed to never shirk that responsibility again.Peter began to use his powers to fight crime. He also tried to join the hero team the Fantastic Four in their formative stages, but was dismissed. As a solo hero, Parker took pictures of his fights as Spider-Man using an automatic camera, and then sold the pictures to The Daily Bugle. Spider-Man rapidly became one of the most well-known citizens in New York City, although Bugle editor J. Jonah Jameson soon branded him a menace.",
-      "intelligence": "null",
-      "strength": "58",
-      "speed": "null",
-      "durability": "null",
-      "power": "null",
-      "combat": "null",
+      "powerstats": {
+        "intelligence": "null",
+        "strength": "58",
+        "speed": "null",
+        "durability": "null",
+        "power": "null",
+        "combat": "null"
+      },
+      "biography": {
+        "full-name": "Miles Morales",
+        "alter-egos": "No alter egos found.",
+        "aliases": ["Spiderman"],
+        "place-of-birth": "-",
+        "first-appearance": "Ultimate Comics Fallout #4 (October, 2011)",
+        "publisher": "Marvel Comics",
+        "alignment": "good"
+      },
+      "appearance": {
+        "gender": "Male",
+        "race": "Human",
+        "height": ["5'2", "157 cm"],
+        "weight": ["125 lb", "56 kg"],
+        "eye-color": "Brown",
+        "hair-color": "Black"
+      },
+      "work": {
+        "occupation": "Student, adventurer, vigilante",
+        "base": "-"
+      },
+      "connections": {
+        "group-affiliation": "-",
+        "relatives": "-"
+      },
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/10647.jpg"
       }

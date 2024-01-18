@@ -1,1 +1,139 @@
-<p>hero-form works!</p>
+@if (myForm) {
+<form [formGroup]="myForm" (ngSubmit)="submit()">
+  <input
+    [value]="form['name'].value | uppercase"
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['name'].errors }"
+    type="text"
+    required
+    placeholder="Nombre"
+    formControlName="name"
+  />
+  <div *ngIf="form['name'].errors" class="invalid-feedback">
+    <div *ngIf="form['name'].errors['required']">El nombre es obligatorio</div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['descriptionlong'].errors }"
+    type="text"
+    required
+    placeholder="Descripción"
+    formControlName="description"
+  />
+  <div *ngIf="form['descriptionlong'].errors" class="invalid-feedback">
+    <div *ngIf="form['descriptionlong'].errors['required']">
+      La Descripción es obligatoria
+    </div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['descriptionlong'].errors }"
+    type="text"
+    required
+    placeholder="Descripción extendida"
+    formControlName="descriptionlong"
+  />
+  <div *ngIf="form['descriptionlong'].errors" class="invalid-feedback">
+    <div *ngIf="form['descriptionlong'].errors['required']">
+      La Descripción larga es obligatoria
+    </div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['intelligence'].errors }"
+    type="number"
+    required
+    placeholder="Inteligencia"
+    formControlName="intelligence"
+  />
+  <div *ngIf="form['intelligence'].errors" class="invalid-feedback">
+    <div *ngIf="form['intelligence'].errors['required']">
+      La Inteligencia es obligatoria
+    </div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['strength'].errors }"
+    type="number"
+    required
+    placeholder="Fortaleza"
+    formControlName="strength"
+  />
+  <div *ngIf="form['strength'].errors" class="invalid-feedback">
+    <div *ngIf="form['strength'].errors['required']">
+      La Fortaleza es obligatoria
+    </div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['speed'].errors }"
+    type="number"
+    required
+    placeholder="Velocidad"
+    formControlName="speed"
+  />
+  <div *ngIf="form['speed'].errors" class="invalid-feedback">
+    <div *ngIf="form['speed'].errors['required']">
+      La Velocidad es obligatoria
+    </div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['durability'].errors }"
+    type="number"
+    required
+    placeholder="Durabilidad"
+    formControlName="durability"
+  />
+  <div *ngIf="form['durability'].errors" class="invalid-feedback">
+    <div *ngIf="form['durability'].errors['required']">
+      La Durabilidad es obligatoria
+    </div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['power'].errors }"
+    type="number"
+    required
+    placeholder="Poder"
+    formControlName="power"
+  />
+  <div *ngIf="form['power'].errors" class="invalid-feedback">
+    <div *ngIf="form['power'].errors['required']">El Poder es obligatorio</div>
+  </div>
+  <input
+    class="form-control my-3"
+    [ngClass]="{ 'is-invalid': form['combat'].errors }"
+    type="number"
+    required
+    placeholder="Combate"
+    formControlName="combat"
+  />
+  <input
+    hidden
+    class="form-control my-3"
+    type="string"
+    placeholder="id"
+    formControlName="id"
+  />
+  <input
+    hidden
+    class="form-control my-3"
+    type="string"
+    placeholder="image"
+    formControlName="image"
+  />
+  <div *ngIf="form['combat'].errors" class="invalid-feedback">
+    <div *ngIf="form['combat'].errors['required']">
+      El Combate es obligatorio
+    </div>
+  </div>
+  <button class="btn btn-primary" [disabled]="myForm.invalid" type="submit">
+    Guardar
+  </button>
+  <button class="btn btn-secondary ml-2" (click)="onReset()" type="submit">
+    Limpiar
+  </button>
+</form>
+
+}
