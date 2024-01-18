@@ -15,7 +15,6 @@ export class DataUtilsService {
 
   errorHandler(error: HttpErrorResponse) {
     return new Observable((observer: Observer<any>) => {
-      console.log('Hero service---->');
       observer.error(error);
     });
   }
