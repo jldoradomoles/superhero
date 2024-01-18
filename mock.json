@@ -1,8 +1,7 @@
 {
   "heros": [
     {
-      "id": "69",
-      "name": "BATMAN 1",
+      "name": "BATMAN NNNN",
       "description": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world.",
       "descriptionlong": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world. Seeking retribution and a demonstration of power, Xauron had thousands of guards, as well as their spouses, herded into an arena, with their children forced to watch as their parents were massacred over the course of days. When the 15,000 children of those families were forced to watch the massacre of their parents, many committed suicide or went insane. One swore never to let such a tragedy occur again, and vowed to become The Batman.Already aware of the Batman Legacy and the many Batmen that had already existed, he chose the symbol of the bat because he thought that it stood for more than simply fear; it stood as an ideal, it stood for justice. Knowing what was necessary to succeed in his mission, he began training, honing his abilities just as hundreds of others who had taken the mantle of the bat had done before him. He furthered his knowledge in millions of physical and mental techniques, various subjects, and even more in searching for the technology he would need to combat evil.After years of patience, training, studying, and preparing, Batman One Million took to the dangerous Asylum Planet, Pluto, along with his sidekick, Robin One Million. Soon after, he was invited to join a new incarnation of the Justice League, Justice Legion Alpha, where he met Superman One Million, Flash One Million, among others. After years of working together, they went back in time to invite the Justice League of the 20th century to see the rebirth of the first Superman, Superman Prime. Unexpectedly, their companion Starman betrayed them and unleashed a plague onto Earth, with the real Justice League being unable to stop it, Justice Legion Alpha was there to help them. Batman One Million worked with the 20th century Batman to find a way to stop Starman's plan, along with Dick Grayson and Tim Drake, using the technology of the Batcave. Batman One Million stopped his plans, ending with Starman returning to the light once more and committing suicide to stop what he had done. Batman One Million and his companions returned to their era, along with the 20th century Justice League, to watch the rebirth of Superman Prime.",
       "intelligence": 47,
@@ -11,6 +10,7 @@
       "durability": 74,
       "power": 47,
       "combat": 47,
+      "id": "69",
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
       }
@@ -28,21 +28,6 @@
       "combat": "100",
       "image": {
         "url": "https://www.superherodb.com/pictures2/portraits/10/100/639.jpg"
-      }
-    },
-    {
-      "id": "71",
-      "name": "Batman II",
-      "description": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto.",
-      "descriptionlong": "In the distant 853rd Century (year 85,300), criminals of the most dangerous variety have been relocated to the bleak prison planet of Pluto. With the aid of the Laughing Virus, the criminal Xauron instigated a rebellion, seizing control of the world. Seeking retribution and a demonstration of power, Xauron had thousands of guards, as well as their spouses, herded into an arena, with their children forced to watch as their parents were massacred over the course of days. When the 15,000 children of those families were forced to watch the massacre of their parents, many committed suicide or went insane. One swore never to let such a tragedy occur again, and vowed to become The Batman.Already aware of the Batman Legacy and the many Batmen that had already existed, he chose the symbol of the bat because he thought that it stood for more than simply fear; it stood as an ideal, it stood for justice. Knowing what was necessary to succeed in his mission, he began training, honing his abilities just as hundreds of others who had taken the mantle of the bat had done before him. He furthered his knowledge in millions of physical and mental techniques, various subjects, and even more in searching for the technology he would need to combat evil.After years of patience, training, studying, and preparing, Batman One Million took to the dangerous Asylum Planet, Pluto, along with his sidekick, Robin One Million. Soon after, he was invited to join a new incarnation of the Justice League, Justice Legion Alpha, where he met Superman One Million, Flash One Million, among others. After years of working together, they went back in time to invite the Justice League of the 20th century to see the rebirth of the first Superman, Superman Prime. Unexpectedly, their companion Starman betrayed them and unleashed a plague onto Earth, with the real Justice League being unable to stop it, Justice Legion Alpha was there to help them. Batman One Million worked with the 20th century Batman to find a way to stop Starman's plan, along with Dick Grayson and Tim Drake, using the technology of the Batcave. Batman One Million stopped his plans, ending with Starman returning to the light once more and committing suicide to stop what he had done. Batman One Million and his companions returned to their era, along with the 20th century Justice League, to watch the rebirth of Superman Prime.",
-      "intelligence": "88",
-      "strength": "11",
-      "speed": "33",
-      "durability": "28",
-      "power": "36",
-      "combat": "100",
-      "image": {
-        "url": "https://www.superherodb.com/pictures2/portraits/10/100/1496.jpg"
       }
     },
     {

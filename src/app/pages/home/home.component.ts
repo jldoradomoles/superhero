@@ -28,9 +28,7 @@ export class HomeComponent implements OnInit, OnDestroy, OnChanges {
   heroName: any;
 
   constructor() {}
-  ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.heroName);
-  }
+  ngOnChanges(changes: SimpleChanges): void {}
 
   heros: Hero[] = [];
   herosDisplayed: Hero[] = [];
@@ -55,10 +53,8 @@ export class HomeComponent implements OnInit, OnDestroy, OnChanges {
   }
 
   limpiar() {
-    console.log(this.heroName);
     this.heroName = '';
     this.herosDisplayed = this.heros;
-    console.log(this.heroName);
   }
 
   getHeros() {
