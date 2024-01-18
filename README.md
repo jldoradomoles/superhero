@@ -7,15 +7,17 @@ Ha sido creada con [Angular CLI](https://github.com/angular/angular-cli) en su v
 ## Servidor de desarrollo
 
 Para arrancar la aplicación ejecutar el comando `npm start` o `ng serve`. La aplicación se levantará automáticamente en el puero `4200`.
-Abrir en un naveagor la url `http://localhost:4200`. La aplicación se actualizara con cada cambio que se realice.
+Abrir en un navegador la url `http://localhost:4200`. La aplicación se actualizara con cada cambio que se realice.
 
-##IMPORTANTE: Ejecutar este comando para levatar el json-server y poder tener datos: `json-server --watch mock.json`
+##IMPORTANTE:
+
+Ejecutar este comando para levatar el json-server y poder tener datos: `json-server --watch mock.json`
 
 ## Build
 
-Ejecutar `ng build` para crear la build del proyecto. Los archivos resultantes de la buil se almacenaran en la carpeta `dist/`.
+Ejecutar `ng build` para crear la build del proyecto. Los archivos resultantes de la buil se almacenarán en la carpeta `dist/`.
 
-## Running unit tests
+## Test unitarios
 
 Ejecutar `ng test` para lanzar los test atraves de la herramienta [Karma](https://karma-runner.github.io).
 
