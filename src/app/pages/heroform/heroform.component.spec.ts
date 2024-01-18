@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataUtilsComponent } from './data-utils.component';
+import { HeroformComponent } from './heroform.component';
 
-describe('DataUtilsComponent', () => {
-  let component: DataUtilsComponent;
-  let fixture: ComponentFixture<DataUtilsComponent>;
+describe('HeroformComponent', () => {
+  let component: HeroformComponent;
+  let fixture: ComponentFixture<HeroformComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [DataUtilsComponent]
+      imports: [HeroformComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(DataUtilsComponent);
+    fixture = TestBed.createComponent(HeroformComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

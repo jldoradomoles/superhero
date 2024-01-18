@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NewheroComponent } from './newhero.component';
+import { NgmodalComponent } from './ngmodal.component';
 
-describe('NewheroComponent', () => {
-  let component: NewheroComponent;
-  let fixture: ComponentFixture<NewheroComponent>;
+describe('NgmodalComponent', () => {
+  let component: NgmodalComponent;
+  let fixture: ComponentFixture<NgmodalComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NewheroComponent]
+      imports: [NgmodalComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(NewheroComponent);
+    fixture = TestBed.createComponent(NgmodalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
