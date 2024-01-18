@@ -1,9 +1,0 @@
-services:
-  web:
-    build:
-      target: builder
-    ports:
-      - 4200:4200
-    volumes:
-      - ./:/project
-      - /project/node_modules
