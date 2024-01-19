@@ -2,9 +2,10 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { HeaderComponent } from './components/header/header.component';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @Component({
   selector: 'app-root',
@@ -18,12 +19,18 @@ import { NgxPaginationModule } from 'ngx-pagination';
     HeaderComponent,
     MatProgressSpinnerModule,
     NgxPaginationModule,
+    LoaderComponent,
+    LoaderComponent,
   ],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements AfterViewInit {
+  @ViewChild(LoaderComponent) loader?: LoaderComponent;
   title = 'superhero';
 
   constructor() {}
+  ngAfterViewInit(): void {
+    // this.loader?.show(true);
+  }
 
   ngOnInit(): void {}
 }

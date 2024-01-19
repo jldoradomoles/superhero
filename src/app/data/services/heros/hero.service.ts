@@ -1,9 +1,23 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { BehaviorSubject, Observable, Observer, catchError, map } from 'rxjs';
+import {
+  BehaviorSubject,
+  Observable,
+  Observer,
+  catchError,
+  debounce,
+  debounceTime,
+  delay,
+  interval,
+  map,
+  takeUntil,
+  tap,
+  timer,
+} from 'rxjs';
 import { DataUtilsService } from '../../utils/data-utils.service';
 import { environment } from '../../../../environments/env';
 import { Hero } from '../../models/hero.model';
+import { Interceptorespecial } from '../../../core/interceptors/_interceptor';
 
 @Injectable({
   providedIn: 'root',
@@ -11,6 +25,7 @@ import { Hero } from '../../models/hero.model';
 export class HeroService {
   http = inject(HttpClient);
   dataUtilsService = inject(DataUtilsService);
+
   private state = new BehaviorSubject<boolean>(false);
   state$ = this.state.asObservable();
 
