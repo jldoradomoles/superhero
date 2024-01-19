@@ -12,7 +12,7 @@ import { LoadingService } from '../../data/services/loading/loading.service';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 
 @Injectable()
-export class Interceptor implements HttpInterceptor {
+export class Interceptorespecial implements HttpInterceptor {
   private _activeRequest: number = 0;
   constructor(private _ngxUiLoaderService: NgxUiLoaderService) {}
 

@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { HeroCardComponent } from '../../components/hero-card/hero-card.component';
 import { HeroListComponent } from '../../components/hero-list/hero-list.component';
-import { Subject, take, takeUntil } from 'rxjs';
+import { Subject, delay, take, takeUntil } from 'rxjs';
 import { HeroService } from '../../data/services/heros/hero.service';
 import { Hero } from '../../data/models/hero.model';
 import { LoaderComponent } from '../../components/loader/loader.component';

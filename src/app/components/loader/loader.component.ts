@@ -1,21 +1,28 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Injectable, Input, OnInit, inject } from '@angular/core';
+import { LoadingService } from '../../data/services/loading/loading.service';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-loader',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatProgressSpinnerModule],
   templateUrl: './loader.component.html',
   styleUrl: './loader.component.css',
 })
-export class LoaderComponent {
-  @Input() isLoading: boolean = false;
+export class LoaderComponent implements OnInit {
+  loadingService = inject(LoadingService);
 
-  hide() {
-    this.isLoading = false;
+  // @Input() isLoading: boolean = false;
+  isLoading: boolean = false;
+
+  ngOnInit(): void {
+    this.show();
   }
 
   show() {
-    this.isLoading = true;
+    this.loadingService.state$.subscribe((data) => {
+      data ? (this.isLoading = true) : (this.isLoading = false);
+    });
   }
 }
